@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammadfarhan.farhan_1202144152_modul2.TakeAway">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="388dp"
+        app:srcCompat="@drawable/coffee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Identitas Pesanan :"
+            android:textSize="50px" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Phone"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Address"/>
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Notes"/>
+
+        <Button
+            android:id="@+id/pilihPesanan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5px"
+            android:onClick="pilihPesanan"
+            android:text="Pilih Pesanan" />
+
+    </LinearLayout>
+</RelativeLayout>

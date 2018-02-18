@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammadfarhan.farhan_1202144152_modul2.MenuUtama">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="388dp"
+        app:srcCompat="@drawable/coffee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pilihmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Pilih Menu :"
+            android:textSize="50px" />
+
+        <RadioGroup
+            android:id="@+id/pilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="pilih">
+
+            <RadioButton
+                android:id="@+id/dineIn"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5px"
+                android:text="Dine In"
+                android:onClick="pilihpesanan"/>
+
+            <RadioButton
+                android:id="@+id/takeAway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5px"
+                android:text="Take Away"
+                android:onClick="pilihpesanan"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5px"
+            android:onClick="pesan"
+            android:text="Pesan Sekarang" />
+
+    </LinearLayout>
+</RelativeLayout>
